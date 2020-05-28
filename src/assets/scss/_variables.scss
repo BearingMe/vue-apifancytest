@@ -1,0 +1,23 @@
+$primary: #8be9fd;
+$secodary: #50fa7b;
+$light: 	#f8f8f2;
+$dark: #282a36;
+$gray: rgba(255, 255, 255, 0.8);
+$transparent: transparent;
+$muted: rgba(255, 255, 255, 0.5);
+
+$theme-colors: (
+  "primary": $primary,
+  "light": $light,
+  "dark": $dark,
+  "gray": $gray,
+  "transparent": $transparent,
+  "muted": $muted
+);
+
+$breakpoints: (
+  "xs": 576px,
+  "sm": 768px,
+  "md": 992px,
+  "lg": 1200px
+);

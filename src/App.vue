@@ -1,28 +1,28 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <header>
+      <the-carousel class="d-none d-md-block"/>
+      <the-navbar />
+    </header>
+
+    <router-view />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TheNavbar from "@/components/TheNavbar";
+import TheCarousel from "@/components/TheCarousel";
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
+    TheNavbar,
+    TheCarousel
   }
-}
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body {
+  font-family: "open sans";
 }
 </style>
