@@ -36,8 +36,12 @@ export default {
 
   data() {
     return {
-      posts: staffPosts()
+      posts: false
     };
+  },
+
+  async mounted() {
+    this.posts = await staffPosts()
   }
 };
 </script>

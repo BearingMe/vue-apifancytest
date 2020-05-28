@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div v-if="posts" class="container">
     <div class="row">
       <div class="page-content" v-html="posts[id].content">
         
@@ -20,8 +20,12 @@ export default {
 
   data() {
     return {
-      posts: staffPosts()
+      posts: false
     };
+  },
+
+  async mounted() {
+    this.posts = await staffPosts()
   }
 };
 </script>
